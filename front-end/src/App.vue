@@ -9,11 +9,18 @@
 </template>
 
 <script>
-import menuBar from '@/components/menuBar.vue';
-export default {
-  name: 'App',
-  components: { menuBar }
-}
+  import menuBar from '@/components/menuBar.vue';
+  import productsPage from './pages/productsPage.vue';
+  import HomePage from './pages/homePage.vue';
+  export default {
+    name: 'App',
+    components: { menuBar }
+  }
+
+  const routes = {
+    '/': HomePage,
+    '/products': productsPage
+  }
 </script>
 
 <style>
