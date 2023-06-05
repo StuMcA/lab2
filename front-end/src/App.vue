@@ -17,10 +17,6 @@
     components: { menuBar }
   }
 
-  const routes = {
-    '/': HomePage,
-    '/products': productsPage
-  }
 </script>
 
 <style>
